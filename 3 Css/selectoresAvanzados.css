@@ -1,0 +1,17 @@
+/*Selector de hijos directos >*/
+div > p{
+    font-size: 30px;
+    color:blue;
+}
+
+/*Selector por atributos*/
+input[type]{}
+
+/*Selector por atributos y valor*/
+input[type="text"]{}
+
+/*herencia: Los estilos del padre herdan los hijos*/
+body{
+    font-size: 30px;
+    color:red;
+}
