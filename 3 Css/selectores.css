@@ -1,0 +1,39 @@
+/*Selector universal: se aplica a todos los elementos de la pagina*/
+/*
+*{
+    color:red;
+}
+*/
+
+/*Selectores de etiqueta: se aplica a etiquetas h1, body, a, etc*/
+h1,h2,h3{
+    color: blue;
+}
+
+h2{
+    color: red;
+}
+
+/*Selectores descendente: Los selectores se buscan en capas, desendentemente*/
+div article p{
+    font-size: 40px;
+    color: orange;
+}
+
+div p a{
+    color: red;
+}
+
+/* Selector de clase */
+
+/*Clase: Se puede repetir. Usar de preferencia clases*/
+.grande{
+    font-size: 28px;
+    color:brown;
+}
+
+/*ID: No se repite*/
+#rojo{
+    font-size: 28px;
+    color: aqua;
+}
