@@ -1,0 +1,7 @@
+.fondo{
+    width: 600px;
+    height: 600px;
+    background: url('img/cajaAgua.jpg') cadetblue;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
