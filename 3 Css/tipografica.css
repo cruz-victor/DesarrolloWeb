@@ -1,0 +1,31 @@
+body{
+    /* Tipo de letra */
+    font-family: 'Times New Roman', Arial, sans-serif, Helvetica; 
+}
+
+h1{
+    /* Tipo de letra */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Tamano de letra */
+    font-size: 20px;
+    /* Estilo de la letra (Cursiva) */
+    font-style: italic;
+    /* Grosor de la letra o negrita */
+    font-weight: bold;
+    /* Color de la letra */
+    color:aqua;
+    /* Alineacion del texto */
+    text-align: right;
+    /* Decoracio del texto (subrayado) */
+    text-decoration: underline;
+    /* Transformacion del texto (todo a mayuscula o minuscula) */
+    text-transform: uppercase;
+}
+
+/* Quiero que el parrafo este justificado */
+p{
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
