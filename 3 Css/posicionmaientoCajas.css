@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background: #0e6b8a;
+    margin: 20px;
+    float: left;
+}
+
+.cajaPadre{
+    margin: 20px;
+    background: #2e294a;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.posicionada{        
+    background:#6695e8 ;
+    /* position: relative; */
+    /* position: absolute; */
+    position: relative;
+    /* top: 50px; */
+    /* right: 200px;  */
+    /* left: 200px; */
+    /* bottom: 50px;  */
+}
+
+
+/* relative
+Desplaza una caja desde la posicion original
+Respeta la posicion de las demas caja*/
+
+/* absolute
+No respeta la posicion de las demas cajas
+Se sobre posiciona */
+
+/* fixed
+No respeta la .posicion de las demas cajas
+Se queda pegada en un posicion 
+Uso para menus de navegacion*/
+
+/* flot
+Uso para simular tablas 
+Poner cajas uno al lado de otra cuando son DIV*/
