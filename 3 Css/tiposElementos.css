@@ -1,0 +1,36 @@
+body{
+    background:f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/* Tipo bloque  */
+/* No pueden tener elemento a su lado */
+/* El atributo display=block, por defecto */
+h1, p, div{
+    background: #ccc;
+    padding: 10px;
+    width: 500px;
+
+    /* display: block; */
+    display: inline-block;
+    /* display: block; */
+}
+
+p a{
+    display: inline-block;
+}
+/* Tipo en linea */
+/* No tienen estas propiedades: width, height */
+/* Los elemento se ponen un a lado del otro   */
+/* El atributo display=inline, por defecto */
+a{
+    color:#fff;
+    background:#000;
+    
+    /* display: inline; */
+    display: inline-block;
+    /* display: block; */
+    padding: 10px;
+    height: 50px;
+}
