@@ -1,0 +1,10 @@
+/* En Css se pueden utilizar colores en RGB, Hexadecimal y HSV  */
+
+.caja{
+    width: 200px;
+    height: 200px;
+    /* background:rgb(0,255,0); */
+    /* background: #328bf0; */
+    /* background: rgba(84%, 15%,24%); */
+    background: rgba(84%, 15%,24%,.5);
+}
