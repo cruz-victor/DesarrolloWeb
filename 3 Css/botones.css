@@ -1,0 +1,68 @@
+body{
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    margin: 20px 0px;
+}
+
+.btn{
+    background: #32021f;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;     
+    margin: 0 10px;
+    
+    display: inline-block;
+    padding: 15px 15px;
+    /* width: 100px;
+    height: 100px; */
+    
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+/* Tamanos del boton */
+.small{
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.medium{
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.big{
+    font-size: 18px;
+    padding: 20px 25px;
+}
+
+.extra-big{
+    font-size: 20px;
+    padding: 25px 30px;
+}
+
+/* Colores del boton */
+.azul{
+    background: blue;
+}
+
+.verde{
+    background: green;
+}
+
+.naranja{
+    background: orange;
+}
+
+.border-radius{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
