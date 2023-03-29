@@ -1,0 +1,38 @@
+/* 
+px-Unidad de medida en pixeles
+em-Unidad de medida relativa a la fuente mas cercana (div padre e hijo)    
+    -Por defecto el navegador usar fuente de 16px
+    -Recomendable trabajar con em
+    -De manera relativa se pueden reducior o aumentar todos los textos
+rem-Unidad de medida relativa al tamano de la fuente del body   
+%-Unidad de medida en porcentaje 
+
+Se recomienda utilizar pixeles en el body y em en los demas.
+
+*/
+
+body
+{
+    font-size: 25px;
+}
+
+p{
+     font-size: 1.5em; 
+}
+
+/* div{
+   width: 10em; 
+   height: 10em;
+   background: black;
+} */
+
+.contenedorPadre{
+    font-size: 1.25em;
+}
+
+.hijo{
+    width: 10em;
+    height: 10em;
+    background: black;
+    color: white;
+}
