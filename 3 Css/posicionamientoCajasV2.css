@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    /* float: right; */
+}
+
+.cajaPadre{
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    background: blueviolet;
+    position: relative;
+}
+
+.posicionada{
+    position: absolute;
+    right: 0%;
+    /* top:  0%; */
+    bottom: 0%;
+}
+
+.rojo{
+    background: red;
+}
+
+.amarillo{
+    background: yellow;
+}
+
+.verde{
+    background: green;
+}
+
+.azul{
+    background: blue;
+}
+
+.negro{
+    background: black;
+}
+
+.celeste{
+    background: aqua;
+}
+
+.plomo{
+    background: gray;
+}
+
+/* 
+static: Posicionamiento por defecto
+relative: Posicionamiento respecto a su ubicacion actual, respeta su posicion de caja
+absolute: Posicionamiento respecto a su caja contenedor (div o pantalla)
+fixed: Posicionamiento fijo respecto a la pantalla
+float: Desplaza las cajas a la izquierda o derecha 
+*/
+
