@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cajaPadre{
+    background: #23294a;
+    width: 700px;
+    /* overflow utilizar para evitar el desbordamiento de los divs */
+    overflow: hidden;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background: #0e6ba8;
+    color: #fff;
+    font-size: 38px;
+    margin: 20px;   
+}
+
+.uno{
+    float: left;
+}
+
+.dos{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.articulo{
+    width: 800px;
+    background: #ccc;
+}
+
+/* Float se creo para colocar el texto al rededor de una imagen, no se creo para maquetar */
+.articulo img{
+    float: left;
+}
