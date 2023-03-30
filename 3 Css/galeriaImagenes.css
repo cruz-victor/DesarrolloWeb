@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000500;
+}
+
+/* width:100%
+Para ajustar el div al ancho de la pantalla */
+.galeria{
+    width: 100%;
+}
+
+/* opacity:.5
+Para ajustar la opacidad de las imagenes */
+.galeria img{
+    vertical-align: top; 
+    width: 400px;
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid #484848;
+    opacity: .5;
+}
+
+.galeria img:hover{
+    border: 1px solid white;
+    opacity: 1;
+}
