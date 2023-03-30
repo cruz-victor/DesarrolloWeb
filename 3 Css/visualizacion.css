@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+div, a{
+    background: #ccc;
+}
+
+/* display:none
+Oculta la etiqueta, elimina el espacio ocupado por la etiqueta */
+
+/* visibility:hidden
+Oculta la etiqueta, no elimina el espacio ocupado por la etiqueta */
+
+a{
+    /* display: block; */
+    /* display: none ; */
+    /* visibility: hidden;  */
+    background: blue;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+/* overflow:hidden
+Oculta el desbordamiento del contenido de la caja
+Tambien se utiliza para que las div dentro de div se desborden */
+
+/* overflow:auto
+Oculta el desbordamiento del contendio de la caja, pero adicion un scroll */
+
+.caja{
+    color: #000;
+    background: #4fb560;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    /* overflow: hidden; */
+    overflow: auto;
+}
+
+.contenedor{
+    width: 600px;
+    background: #ccc;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}
+
+.contenedor2 .caja{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.azul{
+    background: blue;
+    z-index: 10;
+}
+
+.gris{
+    background: gray;
+    left: 50px;
+    bottom: 80px;
+    z-index: 9;
+}
