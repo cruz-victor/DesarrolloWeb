@@ -1,0 +1,48 @@
+/* Al igual que las pseudo clases los pseudo elemento se anaden a los selectores
+Se utilizan :: */
+
+/* Pseudoelemento ::first-letter, permite seleccionar partes de un parrafo */
+p::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Pseudoelemento ::first-line, en este caso es lo mismo la pseudo clase a pseudo elemento */
+p::first-line{
+    background:aqua;
+    line-height: 40px;
+}
+
+/* Pseudoelemento ::selection, cambia el color de fondo del seleccionador de texto */
+*::selection{
+    background: orange;
+    color: white;
+}
+
+.caja{
+    background: #f9a03f;
+    height: 150px;
+    width: 150px;
+}
+
+/* Pseudoelemento ::before, permite agregar un elemento antes de la caja */
+/* Se utilizan para cosas avanzadas */
+.caja::before{
+    content: 'Contenido antes de la caja';
+    display: block;
+    background: #3a3a3a;
+    color: white;
+    position: relative;
+    left: 50px;
+}
+
+/* Pseudoelemento ::after, permite agregar un elemento despued de la caja */
+.caja::after{
+    content: 'Contenido despues de la caja';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: blue;
+    position: relative;
+    left: 200px;
+}
