@@ -1,0 +1,13 @@
+/* En diseno web casi no se usan sombras */
+.texto{
+    /* text-shadow: 5px 5px 10px red; */
+    color:#fff;
+    text-shadow: 5px 5px 10px blue;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background: black;
+    box-shadow: 5px 5px 10px rgba(0,255,0,.5);
+}
