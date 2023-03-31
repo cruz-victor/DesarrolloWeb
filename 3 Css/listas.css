@@ -43,3 +43,27 @@ ol{
 .menu li a:hover{
     background: orange;
 }
+
+.menu2{
+    list-style: none;
+    background: orange;
+    width: 300px;
+    padding: 0;
+    text-align: center;
+}
+
+.menu2 li{
+    border-bottom: 1px solid white;
+}
+
+.menu2 li a{
+    display: block;
+    padding: 20px;
+    color:gray;
+    text-decoration: none;
+}
+
+.menu2 li a:hover{
+    background: gray;
+    color: white;
+}
