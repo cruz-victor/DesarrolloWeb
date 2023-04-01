@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: black;
+    width: 90%;
+    /* Con 'auto' el selector se acomoda al centro */
+    margin: 20px auto;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    /* Mostrar la etiqueta 'a' como bloque para que se aplique el padding */
+    display: block;
+    padding: 20px;
+}
+
+.menu li a:hover{
+    background: #ef8354;
+}
