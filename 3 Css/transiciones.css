@@ -1,0 +1,24 @@
+/* Transicion, es el cambio de un estado a otro */
+.caja{
+    width: 200px;
+    height: 200px;
+    background: #21295c;
+    /*transition: background 1s ease;
+    -webkit-transition: all 1s i;
+    -moz-transition: all 1s i;
+    -ms-transition: all 1s i;
+    -o-transition: all 1s i;
+    *//*Transicionparatodasloselementos*/transition: all 1s ease;
+    /*transition-delay: 1s;
+         */
+}
+
+.caja:hover{
+    background: #9eb3c2;
+    width: 400px;
+    /* transform: rotate(198deg);
+    -webkit-transform: rotate(198deg);
+    -moz-transform: rotate(198deg);
+    -ms-transform: rotate(198deg);
+    -o-transform: rotate(198deg); */
+}
