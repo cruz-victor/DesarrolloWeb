@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bordes de la tabla */
+table, td, th{
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+/* Tamano, alignacion del texto de la tabla */
+table{
+    /* border-callapse, para no mostrar bordes con doble linea */
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+}
+
+/* Altura de las filas de la tabla*/
+th, td{
+    padding: 10px 20px;
+}
+
+/* Color de la cabecera de la tabla */
+th{
+    background: #009ddc;
+    color:white
+}
+
+/* Color de la fila al pasar el cursor */
+tr:hover{
+    background: #e5e5e5;
+}
