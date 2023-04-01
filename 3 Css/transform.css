@@ -1,0 +1,18 @@
+/* Transform, sirve para hacer animaciones, no para maquetacion */
+
+.caja{
+    background: #ffaa5a;
+    width: 200px;
+    height: 200px;
+    /*transform: translate(300px,50px);
+    -webkit-transform: t;
+    -moz-transform: t;
+    -ms-transform: t;
+    -o-transform: t;
+    *//*transform:scale(2,2);
+    *//*transform: rotate(20deg);
+    *//*Permitedeformarelelementoskew=sesgar*//*transform: skew(20deg, 0deg) ;
+    */transform: translate(200px) scale(2,2) rotate(50deg);
+    -moz-transform: translate(200px) scale(2,2) rotate(50deg);
+    -webkit-transform: translate(200px) scale(2,2) rotate(50deg);
+}
