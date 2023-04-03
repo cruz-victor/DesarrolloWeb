@@ -1,3 +1,5 @@
+/* Normalmente las fuentes se colocan en archivos separados 'CSS' */
+/* Desde el sitio web Google font se puede obtener el link para usar una fuente */
 @font-face{
     font-family:'Delicious Handrawn';
     src: url(fonts/Delicious_Handrawn/DeliciousHandrawn-Regular.ttf);
