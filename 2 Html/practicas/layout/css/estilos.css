@@ -131,3 +131,37 @@ footer{
     padding: 15px 0;
     text-align: center;
 }
+
+@media screen and (max-width:800px) {
+    /* body{
+        background: black;
+    } */
+
+    .main{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    body{
+        font-size: 14px;
+    }
+}
+
+/* @media screen and(max-width:500px) {
+    
+}
+
+@media screen and(max-width:200px) {
+    
+}
+
+@media screen and(max-width:100px){
+    
+} */
