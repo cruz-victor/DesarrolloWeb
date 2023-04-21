@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 700px;
+    height: 500px;
+    background: #212d40;
+    /* Los elementos hijos se hacen flexibles, similar a float:left */
+    display: flex;
+    /* row, es por defecto */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; es la union de flex-direction y flex-wrap */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* para usar align-items, quitar el alto de la caja; */
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+    /* align-content es lo mismo que align-items, pero funciona con mas lineas de elementos */
+    align-content: flex-end;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+}
