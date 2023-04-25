@@ -22,6 +22,8 @@ body{
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
     flex-direction: row;
+    /* flex-wrap:wrap, sirve para que las cajas se envuelvan en la siguiente linea
+    Utilizado para disenos flexibles y responsivos */
     flex-wrap: wrap;
     /* flex-flow: row wrap; es la union de flex-direction y flex-wrap */
     /* justify-content: flex-start; */
