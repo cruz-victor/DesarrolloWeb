@@ -15,29 +15,43 @@ body{
     height: 500px;
     background: #212d40;
     /* Los elementos hijos se hacen flexibles, similar a float:left */
+    
     display: flex;
+    
+    /* FLEX-DIRECTION: define la direccion de las cajas dentro de un contenedor */
     /* row, es por defecto */
     /* flex-direction: row; */
     /* flex-direction: row-reverse; */
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
     flex-direction: row;
-    /* flex-wrap:wrap, sirve para que las cajas se envuelvan en la siguiente linea
+    
+    /* FLEX-WRAP: sirve para que las cajas se envuelvan en la siguiente linea
     Utilizado para disenos flexibles y responsivos */
     flex-wrap: wrap;
-    /* flex-flow: row wrap; es la union de flex-direction y flex-wrap */
+    
+    /* FLEX-FLOW: es la union de flex-direction y flex-wrap   */
+    /* flex-flow: row wrap; */
+    
+    /* JUSTIFY-CONTENT: Se usa para alinear horizontalmente las cajas dentro del contenedor */
+    /* Se usa con varias lineas de cajas */
     /* justify-content: flex-start; */
     /* justify-content: flex-end; */
     /* justify-content: center; */
     justify-content: space-between;
+    
+    /* ALIGN-ITEMS: Se usa para alinear verticalmente las cajas dentro del contenedor */
+    /* para usar align-items, quitar el alto de la caja (alineacion vertical) */
     /* align-items: flex-end; */
     /* align-items: center; */
-    /* para usar align-items, quitar el alto de la caja; */
     /* align-items: stretch; */
     /* align-items: baseline; */
-    /* align-content es lo mismo que align-items, pero funciona con mas lineas de elementos */
+
+    /* ALIGN-CONTENT: Se usa para alinear verticalmente las cajas dentro del contenedor */
+    /* align-content es lo mismo que align-items, ajusta las cajas al contenido */
     /* align-content: flex-end; */
     /* align-content: center; */
+    
 }
 
 .caja{
@@ -49,10 +63,26 @@ body{
     padding: 20px;
     font-size: 40px;
     color: #fff;
+    
+    /* ORDER: Cambia el orden de las cajas o elementos */
     /* order: 1; */
-    /* flex-grow: 1;     */
-    /* 1=proporcion para crear, 1=para hacer mas pequeno, auto=crecen en automatico */
+    
+    /* FLEX-GROW:Controla la capacidad de crecer de una caja o elemento mas alla de su tamano pred.
+    Es similar a establecer un porcentaje relativo. Util para disenos responsivos */
+    /* flex-grow: 1;     */    
+
+    /* FLEX-SHRINK: Controla la capacidad de reducirse de una caja o elemento dentro de un contenedor;
+    es lo contrario que flex-grow */
+    /* flex-shrink: 1 */
+
+    /* FLEX-BASIS: Estable el tamano base de las cajas o elementos antes de que se aplique cualquier ajuste de crecimiento o reduccion (flex-grow o flex-shrink) */
+    /* flex-basis: 200px */
+
+    /* FLEX: flex-grow + flex-shrink + flex-basis */
+    /* Permite que los elementos puedan ser flexibles, crecer o reducir segun sea necesario */
+    /* Util donde se desea que los elementos sean flexibles y se adapten a diferentes tamanos de pantallas y dispositivos */
     flex: 1 1 auto;
+
 }
 
 /* .uno{
