@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #000 url('img/fondo.jpg') ;
+    /* background-image: url('img/fondo.jpg'); */
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.contenedor{
+    margin: 20px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+header{
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+.imagenLogo{
+    width: 100px;
+    height: 100px;
+}
+
+.imagenThumb{
+    width: 500px;
+    height: 200px;
+}
