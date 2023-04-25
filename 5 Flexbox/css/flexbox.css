@@ -34,7 +34,8 @@ body{
     /* align-items: stretch; */
     /* align-items: baseline; */
     /* align-content es lo mismo que align-items, pero funciona con mas lineas de elementos */
-    align-content: flex-end;
+    /* align-content: flex-end; */
+    /* align-content: center; */
 }
 
 .caja{
@@ -46,4 +47,39 @@ body{
     padding: 20px;
     font-size: 40px;
     color: #fff;
+    /* order: 1; */
+    /* flex-grow: 1;     */
+    /* 1=proporcion para crear, 1=para hacer mas pequeno, auto=crecen en automatico */
+    flex: 1 1 auto;
+}
+
+/* .uno{
+    order:3;
+}
+
+.dos{
+    order: 2;
+}
+
+.tres{
+    order:1;
+} */
+
+/* .dos{
+    flex-shrink: 1;
+    flex-grow: 2; */
+    /* width: 200px; */
+    /* flex-basis, similar a width */
+    /* flex-basis: 200px;
+    
+
+    flex:1 2 auto;
+}  */
+
+.dos{
+    /* align-self: flex-end; */
+    /* align-self: center; */
+    /* strech, funciona junto con el height=auto */
+    align-self: stretch;
+    height: auto;
 }
