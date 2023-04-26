@@ -7,14 +7,15 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background: #000 url('img/fondo.jpg') ;
-    /* background-image: url('img/fondo.jpg'); */
-    background-size: cover;
+    background: #000 url('/img/fondo.jpg');    
+    /* background-size: cover; */
     background-attachment:fixed;
 }
 
 .contenedor{
-    margin: 20px;
+    /* margin: 20px; */
+    /* margin:auto, centra el contenedor */
+    margin: auto;
     width: 90%;
     max-width: 1000px;
     display: flex;
@@ -86,7 +87,7 @@ aside{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 aside .ad{
@@ -96,4 +97,83 @@ aside .ad{
     padding: 50px 0px;
     background:#4264ae;
     /* margin-bottom: 20px; */
+}
+
+footer{
+    margin: 20px 0px;
+    background: rgba(255,255,255,.2);
+    padding: 20px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+footer .redes-sociales a{
+    color: white;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+footer .redes-sociales a:hover{
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    .main{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    aside .ad{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    header{
+        flex-direction: column;
+        padding-bottom: 20px;        
+    }
+
+    header .menu{
+        width: 100%;
+        background: rgba(255,255,255,.2);
+        text-align: center;
+        padding: 20px;
+    }
+
+    header .logo{
+        margin-bottom: 20px;
+    }
+
+    header .menu a{
+        margin: 0 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .autor{
+        order: 2;
+    }
+
+    footer .redes-sociales{
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    aside{
+        display: none;
+    }
 }
