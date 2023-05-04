@@ -1,0 +1,11 @@
+//El mixin es similar a las funciones
+@mixin colores($fondos, $articulo){
+    body{
+        background: $fondos;
+    }
+    .articulo{
+        background: $articulo;
+    }
+}
+
+@include colores(black,orange);
