@@ -1,0 +1,12 @@
+$colorPrimario:red;
+$colorSecundario:black;
+
+.articulo{
+    .titulo{
+        color:$colorPrimario;
+    }
+
+    p{
+        color:$colorPrimario;
+    }
+}
