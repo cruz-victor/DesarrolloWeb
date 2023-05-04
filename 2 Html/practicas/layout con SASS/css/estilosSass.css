@@ -17,6 +17,7 @@ body {
 header {
   background: white; }
   header nav ul {
+    width: 100%;
     list-style: none;
     overflow: hidden; }
     header nav ul li {
@@ -32,8 +33,8 @@ header {
 
 .main {
   width: 70%;
-  float: left;
-  background: white; }
+  background: white;
+  float: left; }
   .main .imagen {
     width: 100%; }
     .main .imagen img {
@@ -75,11 +76,11 @@ aside {
 
 footer {
   width: 70%;
-  overflow: hidden;
-  text-align: center;
+  clear: both;
   background: black;
   color: white;
-  padding: 15px 0px; }
+  padding: 15px 0px;
+  text-align: center; }
 
 @media screen and (max-width: 800px) {
   .main {
@@ -89,6 +90,9 @@ footer {
     width: 100%; }
 
   footer {
-    width: 100%; } }
+    width: 100%; }
+
+  body {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=estilosSass.css.map */
