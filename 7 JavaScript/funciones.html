@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        //CASO DE USO
+        // var numero1=10;
+        // var numero2=20;
+        // var resultado=numero1 + numero2;
+        // document.write(resultado);
+        // document.write('<br>')
+
+        // numero1=1;
+        // numero2=2;
+        // resultado=numero1 + numero2;
+        // document.write(resultado);
+
+        //FUNCION TIPO PROCEDIMIENTO
+        function sumaNumeros(numero1, numero2){
+            var resultado=numero1+numero2;
+            document.write(resultado);
+            document.write('<br>');
+        }
+
+        sumaNumeros(10,3);
+        sumaNumeros(15,5);
+
+        //FUNCION CON RETORNO
+        function sumaNumerosConReturn(numero1, numero2){
+            var resultado=numero1+numero2;
+            return resultado;
+        }        
+
+        var resultado=sumaNumerosConReturn(15,15);
+        document.write(resultado);
+        document.write('<br>');
+
+        //FUNCION ANONIMA
+        var sumaFuncionAnonima=function(numero1,numero2){
+            return numero1+numero2;
+        }
+        document.write(sumaFuncionAnonima(8,7));
+
+        //FUNCION AUTOINVOCADA
+        (function(){
+            alert('Hola mundo con funcion autoinvocada');
+        }());
+
+    </script>
+</body>
+</html>
