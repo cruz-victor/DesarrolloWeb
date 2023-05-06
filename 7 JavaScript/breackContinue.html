@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break y Continue</title>
+</head>
+<body>
+    <script>
+        //Break y continue, altera el comportamiento del ciclo
+        var amigos=['Victor','Grace','Elon','Ledis'];
+        
+        for(amigo in amigos){            
+            if (amigos[amigo]=='Grace') {
+                continue; //Saltar, continuar a la siguiente ejecucion del ciclo;
+            }
+            document.write(amigos[amigo]+'<br>');
+            // if(amigos[amigo]=='Grace'){
+            //     break;//Corta el ciclo for, sale del for
+            // }            
+        }
+
+        document.write('finalizo la iteracion');
+    </script>
+</body>
+</html>
