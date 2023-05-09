@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        //VARIABLE LOCAL
+        // function saludo(){
+        //     var texto='hola mundo vic';
+        //     console.log(texto);
+        // }
+        // saludo();
+
+        //VARIABLE LOCAL CON FUNCIONES ANIDADAS
+        //De adentro hacia afuer se puede buscar variables, pero nunca de afuera hacia adentro, por seguridad.
+        // function saludo(){
+        //     var texto='hola mundo vic';
+        //     function mensaje(){
+        //         console.log(texto);
+        //     }
+        //     mensaje();
+        // }
+        // saludo();
+
+        //VARIABLE GLOBAL
+        // var texto='hola mundo';
+        // function saludo(){
+        //     console.log(texto);
+
+        //     texto='Hola mundo, modificado';
+        //     console.log(texto);
+        // }
+        // saludo();
+
+        //VARIBLE GLOBAL - SIN LA PALABRA RESERVADA 'VAR'
+        //'var', define una variable local. caso contrario se llama variable global
+        // function saludo(){
+        //     mensaje='Hola mundo';
+        // }
+        // saludo();
+        // console.log(mensaje);
+
+        //FUNCION AUTOINVOCADO
+        (function(){
+            var mensaje = 'Hola mundo vic';
+            // alert('Hola vic');
+        }())
+        console.log(mensaje);
+
+    </script>
+</body>
+</html>
