@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        //OBJETOS
+        //Los obejtos son como variables que pueden guardar multiples variables
+        // var victor={
+        //     nombre:'Victor',
+        //     edad:35,
+        //     pais:'Bolivia',
+        //     bio: function(){
+        //         return this.nombre + ' tiene ' + this.edad + ' anos';
+        //     }
+        // };        
+
+        // var grace={
+        //     nombre:'Grace',
+        //     edad:10,
+        //     pais:'Argentina',
+        //     bio: function(){
+        //         return this.nombre + ' tiene ' + this.edad + ' anos';
+        //     }
+        // }
+
+        // document.write(victor.nombre);
+        // document.write('<br>');
+        // document.write(victor.bio());
+        // document.write('<br>');
+        // document.write(grace.bio());
+
+
+        //CONSTRUCTOR DE OBJETOS
+        function persona(nombre, edad, pais){
+            this.nombre=nombre;
+            this.edad=edad;
+            this.pais=pais;
+        }
+
+        var papa=new persona('Victor',35,'Bolivia');
+        document.write(papa.nombre);
+        document.write('<br>');
+        document.write(papa.edad);
+        document.write('<br>');
+        document.write(papa.pais);
+        
+        document.write('<br>');
+        document.write('<br>');
+
+        var amigo=new persona('Elon',30,'Espana');
+        document.write(amigo.nombre);
+        document.write('<br>');
+        document.write(amigo.edad);
+        document.write('<br>');
+        document.write(amigo.pais);
+        
+        
+
+    </script>
+</body>
+</html>
