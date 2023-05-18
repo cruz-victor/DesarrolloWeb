@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y video</title>
+</head>
+<body>
+    <video src="media/video.mp4" id="video" width="500" controls>
+        <p>Tu navedador no soporta videos en html5</p>
+    </video>
+
+    <audio src="media/sample.mp3" id="audio" controls>
+        <p>Tu navedor no soporta audio en html5</p>
+    </audio>
+
+    <br>
+    <button id="play">Reproducir</button>
+    <button id="pausar">Pausar</button>
+    <input type="range" name="volumen" id="volumen" value="1" min="0" max="1" step="0.1">
+    <br>
+    <br>
+    <button id="playAudio">Reproducir audio</button>
+    <button id="pausarAudio">Pausar audio</button>
+    <input type="range" name="volumenAudio" id="volumenAudio" value="1" min="0" max="1" step="0.1">
+
+    <script>
+        //CONTROLES PARA VIDEO
+        var video=document.getElementById("video");
+        var btnPlay=document.getElementById("play");
+        var btnPausar=document.getElementById("pausar");
+        var volumen=document.getElementById("volumen");
+
+        btnPlay.addEventListener('click',function(){
+            video.play();
+            // document.body.style.backgroundColor='#000';
+        });
+
+        btnPausar.addEventListener('click',function(){
+            video.pause();
+        });
+
+        volumen.addEventListener('change', function(){
+            video.volume=volumen.value;
+        });
+
+        //CONTROLES PARA AUDIO
+        var audio=document.getElementById('audio');
+        var btnPlayAudio=document.getElementById('playAudio');
+        var btnPausarAudio=document.getElementById('pausarAudio');
+        var volumenAudio=document.getElementById('volumenAudio');
+
+        btnPlayAudio.addEventListener('click',function(){
+            audio.play();
+        });
+        btnPausarAudio.addEventListener('click', function(){
+            audio.pause();
+        });
+        volumenAudio.addEventListener('change',function(){
+            audio.volume=volumenAudio.value;
+        });
+
+    </script>
+
+</body>
+</html>
