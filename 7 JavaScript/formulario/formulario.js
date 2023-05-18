@@ -37,14 +37,35 @@ function validarCorreo(e){
 }
 
 function validarSexo(e){
+    if (sexo.value==''||sexo.value==null) {
+        console.log('Completa el sexo');
+        
+        error.style.display='block';
+        error.innerHTML = error.innerHTML+'<li>Porfavor completa el sexo</li>'
 
+        //Detiene el envio del formulario submit
+        e.preventDefault();
+    }else{
+        error.style.display='none';
+    }
 }
 
 function validarTerminos(e){
+    if (terminos.checked==false) {
+        console.log('Acepta los terminios');
+        
+        error.style.display='block';
+        error.innerHTML = error.innerHTML+'<li>Acepta los terminios</li>'
 
+        //Detiene el envio del formulario submit
+        e.preventDefault();
+    }else{
+        error.style.display='none';
+    }
 }
 
 function validarFormulario(e){
+    error.innerHTML = '';
     validarNombre(e); 
     validarCorreo(e);
     validarSexo(e);
