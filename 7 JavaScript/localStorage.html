@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>    
+    <script>
+        //LOCAL STORAGE
+        //         //Los datos se guardan para siempre
+        // //VERIFICACION DE LOCAL STORAGE
+        // // Verificar si existe la opcion Storage en el navegador
+        // if (typeof(Storage)!=='undefined') {
+        //     localStorage.setItem('nombre','Victor');
+        //     // localStorage.nombre='Victor';
+        //     document.write('Si soporta');
+        // }else{
+        //     document.write('Tu navegador no soporta localStorage');
+        // }
+
+        // //ELIMINANDO EL ITEM DEL LOCAL STORAGE
+        // // localStorage.removeItem('nombre');
+
+        // //RECUPERANDO DATOS DEL LOCAL STORAGE
+        // document.write(localStorage.nombre);
+
+
+        //SESSION STORAGE
+                //Los datos se borran cuando se cierra el navegado
+        sessionStorage.nombre='Grace';
+        // sessionStorage.setItem('nombre','Grace');
+        document.write(sessionStorage.nombre);
+        // document.write(sessionStorage.getItem('nombre'));
+        
+
+    </script>
+</body>
+</html>
