@@ -1,16 +1,21 @@
 import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 import { Persona } from '../persona.model';
 import { outputAst } from '@angular/compiler';
+import { LoggingService } from '../loggingService.service';
+import { PersonasService } from '../personasService.service';
 
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  styleUrls: ['./formulario.component.css'],
+  //providers:[LoggingService] //Inyeccion de dependencia
+
 })
 export class FormularioComponent {
 
-  @Output()
-  personaCreada=new EventEmitter<Persona>();
+  // @Output()
+  // personaCreada=new EventEmitter<Persona>();
+
 
   // nombreInput:string='';
   // apellidoInput:string='';
@@ -32,8 +37,15 @@ export class FormularioComponent {
   //   this.personaCreada.emit(persona1);
   // }
 
+  //Inyeccion de dependencia
+  constructor(private loggingService:LoggingService, private personaService:PersonasService){
+
+  }
+
   agregarPersona(){
     let persona1=new Persona(this.nombreInput.nativeElement.value, this.apellidoInput.nativeElement.value);
-    this.personaCreada.emit(persona1);
+    this.loggingService.enviaMensajeAconsoloca("Enviamos persona:"+persona1.nombre);
+    this.personaService.agregarPersona(persona1);
+    //this.personaCreada.emit(persona1);
   }
 }
