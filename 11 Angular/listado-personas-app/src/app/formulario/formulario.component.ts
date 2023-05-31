@@ -17,14 +17,14 @@ export class FormularioComponent {
   // personaCreada=new EventEmitter<Persona>();
 
 
-  // nombreInput:string='';
-  // apellidoInput:string='';
+  nombreInput:string='';
+  apellidoInput:string='';
 
-  @ViewChild('nombreInput')
-  nombreInput:ElementRef;
+  // @ViewChild('nombreInput')
+  // nombreInput:ElementRef;
 
-  @ViewChild('apellidoInput')
-  apellidoInput:ElementRef;
+  // @ViewChild('apellidoInput')
+  // apellidoInput:ElementRef;
 
 
   // agregarPersona(){
@@ -38,14 +38,23 @@ export class FormularioComponent {
   // }
 
   //Inyeccion de dependencia
-  constructor(private loggingService:LoggingService, private personaService:PersonasService){
-
+  constructor(private loggingService:LoggingService,
+              private personasService:PersonasService){
+                this.personasService.saludar.subscribe(
+                  (i:number)=> alert("El indici es:"+i)
+                );
   }
 
+  // agregarPersona(){
+  //   let persona1=new Persona(this.nombreInput.nativeElement.value, this.apellidoInput.nativeElement.value);
+  //   this.loggingService.enviaMensajeAconsoloca("Enviamos persona:"+persona1.nombre);
+  //   this.personasService.agregarPersona(persona1);
+  //   //this.personaCreada.emit(persona1);
+  // }
+
   agregarPersona(){
-    let persona1=new Persona(this.nombreInput.nativeElement.value, this.apellidoInput.nativeElement.value);
+    let persona1=new Persona(this.nombreInput, this.apellidoInput);
     this.loggingService.enviaMensajeAconsoloca("Enviamos persona:"+persona1.nombre);
-    this.personaService.agregarPersona(persona1);
-    //this.personaCreada.emit(persona1);
+    this.personasService.agregarPersona(persona1);
   }
 }

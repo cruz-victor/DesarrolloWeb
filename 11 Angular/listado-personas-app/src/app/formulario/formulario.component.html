@@ -1,24 +1,19 @@
-<form action="" class="form-row">
-  <div class="form-group col-md-2">
-    <!-- <label for="nombre" class="sr-only">Nombre:</label> -->
-    <!-- <input type="text" name="nombre" id="nombre" placeholder="Nombre"
-    class="form-control" [(ngModel)]="nombreInput"> -->
-    <input type="text" name="nombre" id="nombre" placeholder="Nombre"
-    class="form-control" #nombreInput>
-  </div>
+<form action="" class="item">
+    <input
+    type="text"
+    name="nombre"
+    id="nombre"
+    placeholder="Nombre"
+    [(ngModel)]="nombreInput">
 
-  <div class="form-group col-md-2">
-    <!-- <label for="nombre" class="sr-only">Nombre:</label> -->
-    <!-- <input type="text" name="apellido" id="apellido" placeholder="apellido"
-    class="form-control" [(ngModel)]="apellidoInput"> -->
-    <input type="text" name="apellido" id="apellido" placeholder="apellido"
-    class="form-control" #apellidoInput>
-  </div>
+    <input
+    type="text"
+    name="apellido"
+    id="apellido"
+    placeholder="apellido"
+    [(ngModel)]="apellidoInput">
 
-  <!-- <div class="col">
-    <button type="submit" class="btn btn-primary" (click)="agregarPersona(nombreInput, apellidoInput)">Agregar</button>
-  </div> -->
-  <div class="col">
-    <button type="submit" class="btn btn-primary" (click)="agregarPersona()">Agregar</button>
-  </div>
+    <button
+    type="submit"
+    (click)="agregarPersona()">+</button>
 </form>

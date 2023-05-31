@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Persona } from '../persona.model';
+import { PersonasService } from '../personasService.service';
 
 @Component({
   selector: 'app-persona',
@@ -12,4 +13,10 @@ export class PersonaComponent {
 
   @Input()
   i:number;
+
+  constructor(private personasService: PersonasService){}
+
+  emitirSaludo(){
+    this.personasService.saludar.emit(this.i);
+  }
 }
