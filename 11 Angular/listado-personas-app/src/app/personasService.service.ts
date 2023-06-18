@@ -30,4 +30,7 @@ export class PersonasService{
     this.personas[i]=persona2; //Esta linea se puede oviar por que los datos son pasados por referencia
   }
 
+  eliminarPersona(i:number) {
+      this.personas.splice(i,1);
+  }
 }

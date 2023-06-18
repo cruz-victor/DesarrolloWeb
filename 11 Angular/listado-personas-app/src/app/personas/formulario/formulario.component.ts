@@ -25,6 +25,7 @@ export class FormularioComponent {
   nombreInput: string = '';
   apellidoInput: string = '';
   i: number;
+  modoEdicion:number;
 
   // @ViewChild('nombreInput')
   // nombreInput:ElementRef;
@@ -63,7 +64,9 @@ export class FormularioComponent {
 
   ngOnInit() {
     this.i = this.route.snapshot.params['id'];
-    if(this.i){ //Si el indice es diferente de nulo, entonces editar
+    this.modoEdicion=+this.route.snapshot.queryParams['modoEdicion']; //Con + convierte automaticamente a entero
+
+    if(this.modoEdicion!=null && this.modoEdicion===1){ //Si el indice es diferente de nulo, entonces editar
       let persona:Persona=this.personasService.encontrarPersona(this.i);
       this.nombreInput=persona.nombre;
       this.apellidoInput=persona.apellido;
@@ -76,12 +79,19 @@ export class FormularioComponent {
     //   'Enviamos persona:' + persona1.nombre
     // );
 
-    if (this.i) { //modo edicion
+    if (this.modoEdicion!=null && this.modoEdicion===1) { //modo edicion
       this.personasService.modificarPersona(this.i, persona1);
     }else{
       this.personasService.agregarPersona(persona1);
     }
 
+    this.router.navigate(['personas']);
+  }
+
+  eliminarPersona(){
+    if(this.i!=null){
+      this.personasService.eliminarPersona(this.i);
+    }
     this.router.navigate(['personas']);
   }
 }
