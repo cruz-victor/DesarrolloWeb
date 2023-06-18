@@ -3,6 +3,7 @@ import { Persona } from '../../persona.model';
 import { outputAst } from '@angular/compiler';
 import { LoggingService } from '../../loggingService.service';
 import { PersonasService } from '../../personasService.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formulario',
@@ -39,7 +40,8 @@ export class FormularioComponent {
 
   //Inyeccion de dependencia
   constructor(private loggingService:LoggingService,
-              private personasService:PersonasService){
+              private personasService:PersonasService,
+              private router:Router){
                 this.personasService.saludar.subscribe(
                   (i:number)=> alert("El indici es:"+i)
                 );
@@ -52,9 +54,10 @@ export class FormularioComponent {
   //   //this.personaCreada.emit(persona1);
   // }
 
-  agregarPersona(){
+  onGuardarPersona(){
     let persona1=new Persona(this.nombreInput, this.apellidoInput);
     this.loggingService.enviaMensajeAconsoloca("Enviamos persona:"+persona1.nombre);
     this.personasService.agregarPersona(persona1);
+    this.router.navigate(['personas']);
   }
 }
