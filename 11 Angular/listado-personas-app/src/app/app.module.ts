@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PersonaComponent } from './persona/persona.component';
@@ -18,7 +18,8 @@ import { PersonasService } from './personasService.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [LoggingService, PersonasService],
   bootstrap: [AppComponent]
