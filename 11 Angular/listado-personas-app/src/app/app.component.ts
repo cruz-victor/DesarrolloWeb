@@ -10,17 +10,17 @@ import { PersonasService } from './personasService.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
   titulo:string='Listado de personas';
-  // personas:Persona[]=[new Persona('Victor','CG'), new Persona('Grace','CG'), new Persona('Elon','CG')];
-  personas:Persona[]=[];
+  // // personas:Persona[]=[new Persona('Victor','CG'), new Persona('Grace','CG'), new Persona('Elon','CG')];
+  // personas:Persona[]=[];
 
-  //ngOnInit() se ejecuta despues del constructor
-  ngOnInit():void{
-    this.personas = this.personasService.personas;
-  }
+  // //ngOnInit() se ejecuta despues del constructor
+  // ngOnInit():void{
+  //   this.personas = this.personasService.personas;
+  // }
 
-  constructor(private loggingService: LoggingService, private personasService:PersonasService){}
+  // constructor(private loggingService: LoggingService, private personasService:PersonasService){}
   // constructor(private loggingService: LoggingService, private personasService:PersonasService){}
 
   // personaAgregada(persona:Persona){
