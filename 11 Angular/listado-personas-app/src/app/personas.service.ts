@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from "@angular/core";
 import { Persona } from "./persona.model";
-import { LoggingService } from "./loggingService.service";
+import { LoggingService } from "./logging.service";
 import { DataServices } from "./data.service";
 
 @Injectable()
@@ -35,10 +35,13 @@ export class PersonasService{
     persona2.nombre=persona.nombre;
     persona2.apellido=persona.apellido;
     this.personas[i]=persona2; //Esta linea se puede oviar por que los datos son pasados por referencia
+    this.dataService.modificarPersona(i, persona);
   }
 
   eliminarPersona(i:number) {
-      this.personas.splice(i,1);
+      this.personas.splice(i,1); //eliminacion en memoria
+      this.dataService.eliminarPersona(i);//eliminacin en la base de datos
+      this.modificarPersonas();//guardar en la base de datos todo el arreglo
   }
 
   obtenerPersonas(){
@@ -47,5 +50,11 @@ export class PersonasService{
 
   setPersonas(personas: Persona[]) {
     this.personas=personas;
+  }
+
+  modificarPersonas(){
+    if (this.personas!=null) {
+      this.dataService.guardarPersonas(this.personas);
+    }
   }
 }

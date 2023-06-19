@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Persona } from './persona.model';
-import { LoggingService } from './loggingService.service';
+import { LoggingService } from './logging.service';
 import { PersonasService } from './personas.service';
 
 

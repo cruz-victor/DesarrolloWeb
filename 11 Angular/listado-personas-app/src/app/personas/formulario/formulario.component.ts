@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { Persona } from '../../persona.model';
 import { outputAst } from '@angular/compiler';
-import { LoggingService } from '../../loggingService.service';
+import { LoggingService } from '../../logging.service';
 import { PersonasService } from '../../personas.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
