@@ -7,9 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { PersonaComponent } from './personas/persona/persona.component';
 import { FormularioComponent } from './personas/formulario/formulario.component';
 import { LoggingService } from './loggingService.service';
-import { PersonasService } from './personasService.service';
+import { PersonasService } from './personas.service';
 import { PersonasComponent } from './personas/personas.component';
 import { ErrorComponent } from './error/error.component';
+import { DataServices } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,10 @@ import { ErrorComponent } from './error/error.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [LoggingService, PersonasService],
+  providers: [LoggingService, PersonasService, DataServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

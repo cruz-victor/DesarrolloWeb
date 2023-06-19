@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Persona } from './persona.model';
 import { LoggingService } from './loggingService.service';
-import { PersonasService } from './personasService.service';
+import { PersonasService } from './personas.service';
 
 
 

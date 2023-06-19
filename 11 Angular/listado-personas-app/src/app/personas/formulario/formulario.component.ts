@@ -9,7 +9,7 @@ import {
 import { Persona } from '../../persona.model';
 import { outputAst } from '@angular/compiler';
 import { LoggingService } from '../../loggingService.service';
-import { PersonasService } from '../../personasService.service';
+import { PersonasService } from '../../personas.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
